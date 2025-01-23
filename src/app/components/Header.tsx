@@ -7,15 +7,15 @@ export default function Header() {
   const publishRoute = '/anunciar'
 
   return (
-    <header className="fixed flex w-full">
+    <header className="flex w-full bg-gradient-to-b from-gray-400 via-stone-300 to-stone-200">
       <div className="container mx-auto flex max-w-7xl justify-between p-4">
         <Link href={'/'} className="text-2xl">
           Header
         </Link>
         <div className="flex gap-4">
-          <button>Viviendas</button>
-          <button>Locales</button>
-          <button>Talleres</button>
+          <button>Pokemon</button>
+          <button>Tasks</button>
+          <button>Random</button>
         </div>
         <Link
           href={publishRoute}
@@ -23,7 +23,7 @@ export default function Header() {
             path === publishRoute ? 'bg-amber-400' : 'bg-stone-300'
           }`}
         >
-          Anunciar propiedad
+          Get Pokemons
         </Link>
       </div>
     </header>

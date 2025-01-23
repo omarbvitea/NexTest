@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${montserrat.className}flex flex-col h-screen antialiased bg-gradient-to-r from-stone-200 via-stone-100 to-stone-200`}
+        className={`${montserrat.className} flex flex-col h-dvh antialiased bg-stone-200`}
       >
         <Header />
-        <main className="mx-auto flex h-full max-w-7xl flex-col px-4 pt-24">
+        <main className="mx-auto flex h-full w-full max-w-7xl flex-col px-4 py-10">
           {children}
         </main>
       </body>
